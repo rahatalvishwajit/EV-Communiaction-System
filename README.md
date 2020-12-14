@@ -1,2 +1,2 @@
-# EV-Communiaction-System
+# EV-Communication-System
 IoT based Electric Vehicle Communication System
