@@ -1,5 +1,6 @@
 #Lane Detection
 # IMPORT NECESSARY LIBRARIES
+# Code credits: https://github.com/canozcivelek/lane-detection-with-steer-and-departure
 import cv2
 import numpy as np
 import os
@@ -329,7 +330,7 @@ def offCenter(meanPts, inpFrame):
 ################################################################################
 #### END - FUNCTION TO CALCULATE DEVIATION FROM LANE CENTER ####################
 
-
+#Code is changed is here to publish the data.
 def publish_data(text,text1,deviation_text):
     client = mqtt.Client("Electric Vehicle")
     client.connect("broker.emqx.io", 1883, 60)
