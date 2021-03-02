@@ -23,6 +23,6 @@ QoS 0: There is no acknowldgement whether data is received by subscriber or not.
 
 QoS 1: Data is sent at least once i.e. when there is no acknowledgement from subscriber, publisher keeps on sending data until acknowledgement is received. 
 
-QoS 2: Data is sent at most once i.e. The next data packet is not sent by publisher until acknowledgement is received from subscriber. This QoS uses more system power and it is useful here data plays critical role and data loss is not recommended eg. banks, automation.
+QoS 2: Data is sent at most once i.e. The next data packet is not sent by publisher until acknowledgement is received from subscriber. This QoS uses more system power and it is useful where data plays critical role and data loss is not recommended eg. banks, automation.
 
 For our particular project we are going to use QoS 1 as it is compatible with our project and we want to use system power as low as possible.   
