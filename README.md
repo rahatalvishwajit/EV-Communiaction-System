@@ -10,12 +10,25 @@ MQTT is a pub/sub model. The broker used to communicate data is EMQX.
 
 Running procedure:
 1) Install all the necessary libraries.
-2) Run Subscribe Data.py file. You can place this file anywhere as it has no connection with the Lane Detection Publish Data.py file. These two files are connected via broker. You can also send the Subscribe Data.py file to your friend who is at long distance and ask him to run this file. PS. Do not send Lane Detection Publish Data.py file.
-3) Run Lane Detection Publish Data.py file, you will find the data on the terminal as well as video will run where lanes are detected (credits are mentioned above). 
+2) Run Subscribe Data.py file. You can place this file anywhere as it has no connection with the Lane Detection Publish Data.py file. These two files are connected via broker. 
+3) Run Lane Detection Publish Data.py file, you will find the data on the terminal as well as video will run where lanes are detected. 
+
+![pub](https://user-images.githubusercontent.com/73383343/126430604-15ae0de7-748f-40c1-8a5d-618cd0a5ce83.JPG)
 
 Now you will get the data on the terminal where you have run Subscribe Data.py file.
 
+![sub](https://user-images.githubusercontent.com/73383343/126430654-e76524d3-e1e0-4401-8d61-fcc7eb3170cc.JPG)
+
+
 You can also find out various parameters like throughput, data packets captured, packet drop ratio using network analyzer tools like wireshark.
+
+Throughput for QoS 0:
+![LD Throughput QOS 0](https://user-images.githubusercontent.com/73383343/126430797-a0b27e8f-bce8-4ab7-8c1d-c9c53937be87.png)
+Data Packets captured for QoS 0:
+![Packet Lengths QOS 0](https://user-images.githubusercontent.com/73383343/126430814-b342bf4d-9a4a-41a5-a41f-a1ac51431c70.PNG)
+Flow Graph for QoS 0: We can see some TCP errors in the flow graph because some of the data is lost in QoS 0 and because of that no acknowledgement is received from the receiver.
+![Flow Graph QOS 0](https://user-images.githubusercontent.com/73383343/126430957-45bf97c4-d79b-46ef-b1cd-d60eeb1025eb.png)
+
 
 QoS: Quality of Service is decided while publishing and subscribing data. There are 3 QoS in MQTT protocol. 
 
