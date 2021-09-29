@@ -4,8 +4,6 @@ The purpose is to design lane detection adas feature for electric vehicle and co
 The lane detection code is is mostly dependent on Computer Vision(CV2) library of Python.
 The project shows how we can share the EV data using MQTT protocol easily.
 
-The only change is made is that to communicate this data using MQTT protocol.
-
 MQTT is a pub/sub model. The broker used to communicate data is EMQX. 
 
 Running procedure:
