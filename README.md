@@ -1,6 +1,6 @@
 # EV-Communication-System
 # IoT based Electric Vehicle Communication System
-The purpose is to design lane detection adas feature for electric vehicle and communicate the parameters or factors with the user located at long distance using MQTT protocol.
+The purpose is to design lane detection ADAS (Advanced Driver Assistance Systems) feature for electric vehicle and communicate the parameters or factors with the user located at long distance using MQTT protocol.
 The lane detection code is is mostly dependent on Computer Vision(CV2) library of Python.
 The project shows how we can share the EV data using MQTT protocol easily.
 
@@ -36,4 +36,4 @@ QoS 1: Data is sent at least once i.e. when there is no acknowledgement from sub
 
 QoS 2: Data is sent at most once i.e. The next data packet is not sent by publisher until acknowledgement is received from subscriber. This QoS uses more system power and it is useful where data plays critical role and data loss is not recommended eg. banks, automation.
 
-For our particular project we are going to use QoS 1 as it is compatible with our project and we want to use system power as low as possible.   
+For this particular project we are going to use QoS 1 as it is compatible with our project and we want to use system power as low as possible.   
