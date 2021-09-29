@@ -4,7 +4,7 @@ The purpose is to design lane detection ADAS (Advanced Driver Assistance Systems
 The lane detection code is is mostly dependent on Computer Vision(CV2) library of Python.
 The project shows how we can share the EV data using MQTT protocol easily.
 
-MQTT is a pub/sub model. The broker used to communicate data is EMQX. 
+MQTT is a communication protocol based on pub/sub model. The broker used to communicate data is EMQX. 
 
 Running procedure:
 1) Install all the necessary libraries.
