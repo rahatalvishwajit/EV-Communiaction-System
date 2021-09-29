@@ -1,17 +1,20 @@
 # EV-Communication-System
 # IoT based Electric Vehicle Communication System
 The purpose is to design lane detection ADAS (Advanced Driver Assistance Systems) feature for electric vehicle and communicate the parameters or factors with the user located at long distance using MQTT protocol.
-The lane detection code is is mostly dependent on Computer Vision(CV2) library of Python.
+The lane detection code is mostly dependent on Computer Vision(CV2) library of Python.
 The project shows how we can share the EV data using MQTT protocol easily.
 
 MQTT is a communication protocol based on pub/sub model. The broker used to communicate data is EMQX. 
 
 Running procedure:
 1) Install all the necessary libraries.
-2) Run Subscribe Data.py file. You can place this file anywhere as it has no connection with the Lane Detection Publish Data.py file. These two files are connected via broker. 
-3) Run Lane Detection Publish Data.py file, you will find the data on the terminal as well as video will run where lanes are detected. 
-
+2) Run Lane Detection Publish Data.py file, you will see the data being published on the terminal as well as video will run where lanes are detected. 
+3) Run Subscribe Data.py file on another terminal.
+ 
+Lane Detection Publish Data.py output:
 ![pub](https://user-images.githubusercontent.com/73383343/126430604-15ae0de7-748f-40c1-8a5d-618cd0a5ce83.JPG)
+
+Subscribe Data.py output:
 
 Now you will get the data on the terminal where you have run Subscribe Data.py file.
 
