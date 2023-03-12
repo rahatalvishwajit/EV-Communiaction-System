@@ -6,22 +6,22 @@ The project shows how we can share the EV data using MQTT protocol easily.
 
 MQTT is a communication protocol based on pub/sub model. The broker used to communicate data is EMQX. 
 
-Running procedure:
+Execution procedure:
 1) Install all the necessary libraries.
-2) Run Lane Detection Publish Data.py file, you will see the data being published on the terminal as well as video will run where lanes are detected. 
-3) Run Subscribe Data.py file on another terminal.
+2) Run Lane Detection Publish Data.py file, the data will start getting published on the terminal and demo video will be played where lanes are detected. 
+3) Run Subscribe Data.py file on another terminal window.
  
 Lane Detection Publish Data.py output:
 ![pub](https://user-images.githubusercontent.com/73383343/126430604-15ae0de7-748f-40c1-8a5d-618cd0a5ce83.JPG)
 
 Subscribe Data.py output:
 
-Now you will get the data on the terminal where you have run Subscribe Data.py file.
+Now the published data will be received on the terminal window where the Subscribe Data.py file was executed.
 
 ![sub](https://user-images.githubusercontent.com/73383343/126430654-e76524d3-e1e0-4401-8d61-fcc7eb3170cc.JPG)
 
 
-You can also find out various parameters like throughput, data packets captured, packet drop ratio using network analyzer tools like wireshark.
+There are various data transmission parameters like throughput, data packets captured, packet drop ratio which can be analyzed using network analyzer tools like wireshark.
 
 Throughput for QoS 0:
 ![LD Throughput QOS 0](https://user-images.githubusercontent.com/73383343/126430797-a0b27e8f-bce8-4ab7-8c1d-c9c53937be87.png)
